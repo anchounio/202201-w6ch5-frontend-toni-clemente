@@ -12,7 +12,7 @@ import { update } from "../../services/api";
 //     dispatch(createRobot(newRobot));
 //   };
 
-export function Update(robot) {
+export function Update({ robot }) {
   const dispatch = useDispatch();
 
   const toggleRobot = (newRobot) => {
