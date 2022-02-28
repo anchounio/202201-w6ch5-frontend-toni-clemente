@@ -21,7 +21,7 @@ export function set(robot) {
     }) */
 }
 export function update(robot) {
-  return axios.patch(ROBOTS_API + robot.id, robot);
+  return axios.patch(ROBOTS_API + robot._id, robot);
 }
 export function remove(id) {
   return axios.delete(ROBOTS_API + id);
